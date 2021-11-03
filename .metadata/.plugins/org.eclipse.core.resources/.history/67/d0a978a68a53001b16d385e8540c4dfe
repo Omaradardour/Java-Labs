@@ -1,0 +1,64 @@
+
+import java.util.Scanner;
+
+public class task3 {
+	private static Scanner predicate;
+	
+	public static void main(String[] args) {
+		predicate = new Scanner(System.in);
+		System.out.println("Input two predicates :");
+		String Pr = predicate.nextLine();
+		StringBuilder str = new StringBuilder(Pr);      
+		
+		// Let  X = {x1, x2},  Y={y1, y2}
+		Boolean[] Px1 = {false, false, false, false, false, false, false, false,true,  true, true,  true, true,  true,  true, true};
+		Boolean[] Px2 = {false, false, false, false, true,  true,  true,  true, false, false,false, false,true,  true,  true, true};
+		Boolean[] Py1 = {false, false, true,  true,  false, false, true,  true, false, false,true,  true, false, false, true, true};
+		Boolean[] Py2 = {false, true,  false, true,  false, true,  false, true, false, true, false, true, false, true,  false,true};
+		Boolean left = null, right=null, result = false;
+		int op_ind = str.lastIndexOf("(")-2;
+		int i = 0;
+			while(i < 16 && result==false) {		
+				
+			if(str.charAt(0) == '\u2200' && str.charAt(2) == '\u2203' && str.charAt(op_ind) == '\u2228') {  // '\u2200' is unicode for ∀ (for all)
+				left = (Px1[i] || Py1[i])&&(Px1[i] || Py2[i]);           // '\u2203' is unicode for ∃     (Exist)
+				right = (Px2[i] || Py1[i])&&(Px2[i] || Py2[i]);
+				result = left && right;
+			}
+			if(str.charAt(0) == '\u2203' && str.charAt(2) == '\u2200'&& str.charAt(op_ind) == '\u2228') {
+				left = (Px1[i] || Py1[i])&&(Px1[i] || Py2[i]);
+				right = (Px2[i] || Py1[i])&&(Px2[i] || Py2[i]);
+				result = left || !right;
+			}
+			if(str.charAt(0) == '\u2200' && str.charAt(2) == '\u2203' && str.charAt(op_ind) == '\u2227') {  // '\u2200' is unicode for ∀ (for all)
+				left = (Px1[i] && Py1[i])&&(Px1[i] && Py2[i]);           // '\u2203' is unicode for ∃     (Exist)
+				right = (Px2[i] && Py1[i])&&(Px2[i] && Py2[i]);
+				result = left && right;
+				
+				
+				
+			}
+			if(str.charAt(0) == '\u2203' && str.charAt(2) == '\u2200'&& str.charAt(op_ind) == '\u2227') {
+				left = (Px1[i] && Py1[i])&&(Px1[i] && Py2[i]);
+				right = (Px2[i] && Py1[i])&&(Px2[i] && Py2[i]);
+				result = left || right;
+			
+			
+				
+			}
+			      /// \u2228 is unicode for logical OR (∨)
+			
+			     /// \u2227 is unicode for logical AND (∧)
+		if (result==true) {
+			System.out.println("The predicate is not contradiction");
+			System.out.println("Px1 =" + Px1[i] + " |Px2 =" + Px2[i] + "| Py1= " + Py1[i] + "| Py2= " + Py2[i]);
+		}
+			i++;
+		}
+			if(result == false) {
+					System.out.println("The predicate is contradiction");
+			
+			}
+	}
+}
+	

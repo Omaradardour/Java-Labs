@@ -1,0 +1,20 @@
+import java.util.*;
+public class Buble {
+
+	public static void main(String[] args) {
+		ArrayList <Integer> Num = new ArrayList<Integer>();
+		Num.add(0);
+		Num.add(2);
+		Num.add(7);
+		Num.add(1);
+		
+
+			int pos = Num.indexOf(5);
+	System.out.println(pos);
+	}
+		
+		}
+	
+
+
+	

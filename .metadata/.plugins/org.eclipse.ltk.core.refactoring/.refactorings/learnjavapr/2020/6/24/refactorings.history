@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename local variable &apos;Monthly&apos; in &apos;learnjavapr.HelloWorld.main(...)&apos; to &apos;MonthlySalary&apos;&#x0D;&#x0A;- Original project: &apos;learnjavapr&apos;&#x0D;&#x0A;- Original element: &apos;learnjavapr.HelloWorld.main(String[]).Monthly&apos;&#x0D;&#x0A;- Renamed element: &apos;Monthly&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename local variable &apos;Monthly&apos;" id="org.eclipse.jdt.ui.rename.local.variable" input="/src&lt;learnjavapr{HelloWorld.java[HelloWorld~main~\[QString;@Monthly!240!267!244!250!I!0!false" name="MonthlySalary" references="true" stamp="1592068864310" version="1.0"/>
+</session>

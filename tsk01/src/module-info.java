@@ -1,0 +1,2 @@
+module tsk01 {
+}

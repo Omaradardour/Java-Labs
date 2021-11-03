@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class Conditions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int mark;
+		int sum =0;
+		for(int i=1;i<8;i++,i++) {
+			System.out.println("Enter the mark"+i);
+			Scanner myScanner = new Scanner(System.in);
+			mark = myScanner.nextInt();
+			sum= sum +mark;
+		}
+
+	System.out.println("the average is :"+sum/5);
+	}
+	}
+
+	
+

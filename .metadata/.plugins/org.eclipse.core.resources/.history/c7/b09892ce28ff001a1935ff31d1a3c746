@@ -1,0 +1,14 @@
+
+public class WhileJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str = "this is morocco sdfdf ";
+String low = str.intern();
+
+System.out.println(low);
+
+}
+	}
+
+

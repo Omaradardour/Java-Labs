@@ -1,0 +1,13 @@
+
+public class Classes {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int lives=3;
+		if (lives<4) {
+System.out.println("game over");
+		}
+
+	}
+
+}

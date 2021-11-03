@@ -1,0 +1,14 @@
+
+public class WhileJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str = "this is morocco ";
+String low = str.substring(0, 49);
+
+System.out.println(low);
+
+}
+	}
+
+

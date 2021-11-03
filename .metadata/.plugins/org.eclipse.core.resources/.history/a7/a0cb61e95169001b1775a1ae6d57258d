@@ -1,0 +1,14 @@
+import java.util.*;
+public class Buble {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<String> cars = new ArrayList<String>();
+	    cars.add("Volvo");
+	    cars.add("BMW");
+	    cars.add("Ford");
+	  
+	      System.out.println(cars);
+	    }
+	  }
+	

@@ -1,0 +1,14 @@
+
+public class WhileJava {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+String str = "THIS IS moroc ";
+String low = str.toLowerCase();
+
+System.out.println(low);
+
+}
+	}
+
+

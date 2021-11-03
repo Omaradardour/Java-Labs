@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class Conditions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int age=20;
+	int myAge;
+	Scanner myScanner = new Scanner(System.in);
+	System.out.println("Enter yur age");
+	myAge = myScanner.nextInt();
+	if(myAge<age) {
+		System.out.println("you are in");
+	}
+		else if (myAge>age) {
+			System.out.println("You are not in");
+			
+			
+		}
+		else {
+			System.out.println("erreur");
+		}
+	}
+	}
+
+	
+

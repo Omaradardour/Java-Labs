@@ -1,0 +1,16 @@
+package task03;
+
+public class One {
+public static int square(int x) {
+	return x*x;
+}
+public static int power (int x,int y) {
+	return power(x,y);
+}
+public static void power (A a,int y) {
+	
+}
+public static void power (int []array,int y) {
+	
+}
+}

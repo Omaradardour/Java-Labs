@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Conditions {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+int grade = 16;
+switch(grade) {
+case 19:
+	System.out.println("Excellent grade");
+	break;
+case 16:
+	System.out.println("good grade");
+break;
+	default:
+		System.out.println("you are not classed");
+}
+
+	
+	}
+	}
+
+	
+

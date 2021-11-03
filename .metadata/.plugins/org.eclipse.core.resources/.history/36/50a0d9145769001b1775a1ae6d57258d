@@ -1,0 +1,17 @@
+import java.util.*;
+public class Buble {
+
+	public static void main(String[] args) {
+		ArrayList <String> Num = new ArrayList<String>();
+		Num.add("Hola");
+		Num.add("Jame");
+		Num.add("Koka");
+		Num.set(2,"Omar");
+		Num.remove(0);
+		
+			System.out.println( Num);
+		}
+	}
+
+
+	
